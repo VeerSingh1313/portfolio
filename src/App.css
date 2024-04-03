@@ -32,7 +32,76 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.mainHome {
+  width: 100%;
+  padding: 5% 0;
+
+  padding-left: 5%;
+  display: flex;
+  color: aliceblue;
+  background-image: url(https://media.istockphoto.com/id/1358028712/video/hud-interface-with-grid-a-background-video-material-that-can-be-used-in-a-variety-of.jpg?s=640x640&k=20&c=JRu2__mBpsg2mD5FaJ6u4fEO60Q50Yu7h6AN1WRuMmE=);
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+
+
+.right img {
+  /* aspect-ratio: 3/4; */
+  width: 50%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  box-shadow: rgba(151, 204, 248, 0.25) 0px 54px 55px, rgba(151, 204, 248, 0.25) 0px -12px 30px, rgba(151, 204, 248, 0.25) 0px 4px 6px, rgba(151, 204, 248, 0.25) 0px 12px 13px, rgba(151, 204, 248, 0.25)0px -3px 5px;
+
+}
+
+.fh1:hover {
+  color: chocolate;
+
+}
+
+.fh1,
+.fh2 {
+  transition: all 0.4s;
+}
+
+.fh2:hover {
+  color: rgb(6, 105, 138);
+}
+
+.fp1 {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.navlink:hover {
+  box-shadow: 0 8px 8px -4px lightblue;
+  transition: all 0.4s;
+}
+
+.icons i {
+  cursor: pointer;
+  font-size: 30px;
+  width: fit-content;
+
+}
+
+.icons i :hover {
+  box-shadow: 0 20px 20px -8 px lightblue;
+  transition: all 0.4s;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  gap: 5%;
+
 }

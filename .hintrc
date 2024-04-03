@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "scale",
+          "width: fit-content"
+        ]
+      }
+    ],
+    "no-inline-styles": "off"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 119",
+    "not chrome <= 119",
+    "not edge <= 119",
+    "not ios_saf <= 12.5",
+    "not opera <= 104",
+    "not samsung <= 23"
+  ]
+}
