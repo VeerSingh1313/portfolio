@@ -1,13 +1,12 @@
 import React from 'react';
-import biograpy from './image/about.mp4'
+import Video from './image/about.mp4'
 const MyComponent = () => {
 
     return (
         <>
             <div className='about_main'>
                 <div className='about_left'>
-                    <div><video src={biograpy} autoplay controls={false} />
-                    </div>
+                   
                 </div>
                 <div className='about_right'>
                     <h1 className='about_right_h1'>MY BIOGRAPHY</h1>
