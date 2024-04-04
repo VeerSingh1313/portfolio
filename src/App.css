@@ -45,7 +45,11 @@
   display: flex;
   color: aliceblue;
   background: url(./component/image/background.svg);
+  position: relative;
 }
+
+
+
 
 .left,
 .right {
@@ -111,9 +115,6 @@
 
 .about_main {
   display: flex;
-  background-image: url(./component/image/background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .about_left {
@@ -126,7 +127,6 @@
 .about_right {
   width: 50%;
   margin-top: 5%;
-  color: white;
 
 }
 
@@ -136,8 +136,5 @@
   border-bottom: #61dafb solid 3px;
 }
 
-.Education_main {
-  background: url(./component/image/background.svg);
-  color: white;
-}
-
+/* .Education_main {
+} */
