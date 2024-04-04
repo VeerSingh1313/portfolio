@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { IoMail } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa6";
-import { AiFillInstagram } from "react-icons/ai";
-import { IoLogoSkype } from "react-icons/io5";
-import { FaSquareGithub } from "react-icons/fa6";
+// import { IoMail } from "react-icons/io5";
+// import { FaLinkedin } from "react-icons/fa6";
+// import { AiFillInstagram } from "react-icons/ai";
+// import { IoLogoSkype } from "react-icons/io5";
+// import { FaSquareGithub } from "react-icons/fa6";
 import vishal from './image/vishal.jpg'
 import { ReactTyped } from 'react-typed';
-import ComposeEmail from './open-mail';
 function Home() {
 
 
@@ -26,9 +25,9 @@ function Home() {
                         />
                         {/* I,m Vishal <span className='fh1'>Saini</span> */}
                     </h1>
-
-                    <div className='icons'><i>< IoMail /></i><i><FaLinkedin /></i>
-                        <i><AiFillInstagram /></i> <i><IoLogoSkype /></i><i><FaSquareGithub /></i> </div>
+                    <p className='fp1'>"I'm VISHAL , a passionate React developer, and I specialize in creating engaging web applications using React."</p>
+                    {/* <div className='icons'><i>< IoMail /></i><i><FaLinkedin /></i>
+                        <i><AiFillInstagram /></i> <i><IoLogoSkype /></i><i><FaSquareGithub /></i> </div> */}
                 </div>
                 <div className="right">
                     <img src={vishal} />

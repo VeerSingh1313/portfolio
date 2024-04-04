@@ -3,15 +3,16 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './component/header';
 import Home from './component/home';
-
 import 'aos/dist/aos.css';
-import TypingEffect from './component/about';
+import MyComponent from './component/about';
+import Education from './component/Education';
 function App() {
   return (
     <>
       <Header />
       <Home />
-      <TypingEffect />
+      <MyComponent />
+      <Education/>
     </>
   );
 }

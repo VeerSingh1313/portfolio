@@ -9,7 +9,7 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand href="#home"><img width={100} src="https://budventure.technology/public/frontend/images/hire_developer/JS/reactjs/Hire_reactjs_Main.png" /></Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link className='navlink' href="#home">Home</Nav.Link>
+
                         <Nav.Link className='navlink' href="#features">About</Nav.Link>
                         <Nav.Link className='navlink' href="#pricing">Skills</Nav.Link>
                         <Nav.Link className='navlink' href="#fffff">Education</Nav.Link>
