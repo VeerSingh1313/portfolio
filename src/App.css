@@ -41,20 +41,21 @@
 .mainHome {
   width: 100%;
   padding-left: 5%;
-  height: 85vh;
+  padding-bottom: 1%;
+  height: 100%;
   display: flex;
   color: aliceblue;
-  background: url(./component/image/background.svg);
+  background: url(http://localhost:3000/static/media/background.9bac57560ea11a68663c.svg);
   position: relative;
 }
 
-
-
-
-.left,
 .right {
-  width: 50%;
+  width: 40%;
+  padding-bottom: 20%;
+}
 
+.left {
+  width: 60%;
 }
 
 .right {
@@ -63,7 +64,7 @@
 
 
 .right img {
-  width: 50%;
+  width: 60%;
   margin-top: 7%;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   box-shadow: rgba(151, 204, 248, 0.25) 0px 54px 55px, rgba(151, 204, 248, 0.25) 0px -12px 30px, rgba(151, 204, 248, 0.25) 0px 4px 6px, rgba(151, 204, 248, 0.25) 0px 12px 13px, rgba(151, 204, 248, 0.25)0px -3px 5px;
@@ -77,6 +78,7 @@
 
 .fh1,
 .fh2 {
+  /* font-size: 2.5rem; */
   transition: all 0.4s;
 }
 
@@ -85,9 +87,199 @@
 }
 
 .fp1 {
-  font-size: 30px;
+  /* font-size: 2rem; */
   font-weight: 300;
 }
+
+@media (max-width:320px) {
+
+  .fh1,
+  .fh2 {
+    font-size: 1rem;
+  }
+
+  .fp1 {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .right img {
+    margin-left: 10%
+  }
+
+  .air {
+    height: 80px;
+  }
+
+  @keyframes wave {
+    0% {
+      background-position-x: 0px;
+    }
+
+    100% {
+      background-position-x: 200px;
+    }
+  }
+
+  @keyframes wave2 {
+    0% {
+      background-position-x: 0px;
+    }
+
+    100% {
+      background-position-x: -200px;
+    }
+  }
+
+  .mainHome {
+    padding-bottom: 0%;
+    padding-left: 2%;
+  }
+
+  .left {
+    width: 58%;
+  }
+
+  .right {
+    width: 42%;
+  }
+
+
+  .air {
+    display: none;
+  }
+
+}
+
+@media(min-width:375px) {
+
+  .fh1,
+  .fh2 {
+    font-size: 1rem;
+  }
+
+  .right {
+    padding-bottom: 45%;
+  }
+
+  .fp1 {
+    font-size: 0.9rem;
+  }
+
+  .mainHome {
+    padding-bottom: 10%;
+  }
+
+}
+
+@media (max-width:321px) {
+
+  .fh1,
+  .fh2 {
+    font-size: 0.9rem;
+  }
+
+  .fp1 {
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+
+  .air {
+    height: 10px;
+  }
+}
+
+@media(max-width:425px) {
+  .right {
+    width: 40%;
+    padding-bottom: 35%;
+  }
+}
+
+@media (min-width:767px) {
+  .fp1 {
+    font-size: 1rem;
+  }
+
+  .right {
+    padding-bottom: 45%;
+  }
+}
+
+@media (min-width:768px) {
+  .fp1 {
+    font-size: 2rem;
+  }
+
+  .left {
+    width: 65%;
+  }
+
+  .right {
+    width: 35%;
+    padding-bottom: 45%;
+  }
+}
+
+
+.fp1 {
+  font-size: 1rem;
+}
+
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+}
+
+.right img {
+  width: 90%;
+}
+
+/* .right img {
+    width: 100%;
+  } */
+
+.air {
+  height: 80px;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 200px;
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: -200px;
+  }
+}
+
+.mainHome {
+  padding-bottom: 30%;
+}
+
+.air.air4,
+.air.air3 {
+  bottom: 5px;
+}
+
+/* .fh1,
+.fh2 {
+  font-size: 1.9rem;
+} */
+
 
 .navlink:hover {
   box-shadow: 0 8px 8px -4px lightblue;
@@ -138,3 +330,64 @@
 
 /* .Education_main {
 } */
+.air {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+
+.air.air1 {
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.air.air2 {
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.air.air3 {
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+.air.air4 {
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}

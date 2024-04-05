@@ -18,7 +18,7 @@ function Home() {
                     </h1>
                     <h1 className='fh2'>
                         <ReactTyped
-                            strings={[" I,m Vishal <span className='fh1'>Saini</span>", "  <span className='fh1 fp1'>I am Frontend Developer </span> "]}
+                            strings={[" I,m Vishal <span className='fh1'>Saini</span>", "  <span className='fh1 fp1'>I,m Frontend Developer </span> "]}
                             typeSpeed={40}
                             backSpeed={10}
                             loop
@@ -32,7 +32,10 @@ function Home() {
                 <div className="right">
                     <img src={vishal} />
                 </div>
-
+                <div class='air air1'></div>
+                <div class='air air2'></div>
+                <div class='air air3'></div>
+                <div class='air air4'></div>
             </div>
         </>
     );
