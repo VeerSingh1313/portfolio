@@ -50,7 +50,7 @@
 
 .progress-container {
   width: 100%;
-  background-color: #64a4e3;
+  background-color: #f3efe6;
   height: 1vh;
   border-radius: 10px;
 }
@@ -61,7 +61,7 @@
 .progress-bar4,
 .progress-bar5 {
   height: 1vh;
-  background-color: #127cb2;
+  background-color: #61dafb;
   text-align: center;
   color: rgb(220, 63, 63);
   font-size: 16px;
@@ -70,10 +70,9 @@
   border-radius: 10px 0 0 10px;
 }
 
-.progress-bar1 {
-  width: 80%;
-}
+/* .skill_left {
 
+} */
 .progress-bar2 {
   width: 85%;
 }
@@ -88,6 +87,31 @@
 
 .progress-bar5 {
   width: 70%;
+}
+
+@media(max-width:425px) {
+  .skillmain {
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    width: 75%;
+  }
+
+  .skill_right {
+    margin-top: 10%;
+
+  }
+}
+
+.contactright {
+  width: 50%;
+
+  font-size: 2rem;
+  padding: 5%;
+
 }
 
 
@@ -348,6 +372,10 @@
   color: black;
 }
 
+.emailtext {
+  font-size: 1.5rem;
+  font-weight: 500
+}
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
@@ -383,4 +411,24 @@ body {
   width: 80%;
   opacity: 0;
   transition: 1s ease 0.3s;
+}
+
+
+
+.meter {
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  z-index: 0;
+  margin-top: -5px;
+  overflow: hidden;
+}
+
+.meter>span {
+  z-index: 50;
+  display: block;
+  height: 100%;
+  background-color: #61dafb;
+  position: relative;
+  overflow: hidden;
 }

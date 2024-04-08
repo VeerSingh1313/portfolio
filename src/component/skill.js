@@ -7,7 +7,7 @@ import { FaGithub } from 'react-icons/fa';
 const Skill = () => {
     return (
         <div className="skillmain">
-            <div className="skill-left">
+            <div className="skill_left">
                 <h1>Technical Skills</h1>
                 <div>
                     <div>
@@ -48,11 +48,33 @@ const Skill = () => {
                     </div>
                 </div>
             </div>
-            <div className="skill-right">
+            <div className="skill_right">
                 <h1>Professional Skills</h1>
+                <div>
+                    <p>Communication skills</p>
+                    {/* <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style={{ value: '10' }}></div> */}
+                    <div class="meter"><span style={{ width: '70%' }}></span></div>
+
+                </div>
+                <div>
+                    <p>Teamwork</p>
+                    {/* <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style={{ value: '10' }}></div> */}
+                    <div class="meter"><span style={{ width: '90%' }}></span></div>
+                </div>
+                <div>
+                    <p>Time management</p>
+                    {/* <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style={{ value: '10' }}></div> */}
+                    <div class="meter"><span style={{ width: '100%' }}></span></div>
+                </div>
+                <div>
+                    <p>Problem solving</p>
+                    {/* <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style={{ value: '10' }}></div> */}
+                    <div class="meter"><span style={{ width: '82%' }}></span></div>
+
+                </div>
             </div>
         </div>
-    );
-};
 
-export default Skill;
+    );
+}; export default Skill;
+

@@ -5,14 +5,14 @@ import Home from './component/home';
 import 'aos/dist/aos.css';
 import Contact from './component/contact';
 import Skill from './component/skill';
-import Project from './component/project';
+// import Project from './component/project';
 function App() {
   return (
     <>
       <Header />
       <Home />
       <Skill />
-      <Project />
+      {/* <Project /> */}
       <Contact />
     </>
   );
