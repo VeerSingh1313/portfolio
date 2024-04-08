@@ -41,17 +41,71 @@
 .mainHome {
   width: 100%;
   padding-left: 5%;
-  padding-bottom: 1%;
-  height: 100%;
+
   display: flex;
   color: aliceblue;
-  background: url(http://localhost:3000/static/media/background.9bac57560ea11a68663c.svg);
+  background: url(./component/image/background.svg);
   position: relative;
 }
+
+.progress-container {
+  width: 100%;
+  background-color: #64a4e3;
+  height: 1vh;
+  border-radius: 10px;
+}
+
+.progress-bar1,
+.progress-bar2,
+.progress-bar3,
+.progress-bar4,
+.progress-bar5 {
+  height: 1vh;
+  background-color: #127cb2;
+  text-align: center;
+  color: rgb(220, 63, 63);
+  font-size: 16px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  border-radius: 10px 0 0 10px;
+}
+
+.progress-bar1 {
+  width: 80%;
+}
+
+.progress-bar2 {
+  width: 85%;
+}
+
+.progress-bar3 {
+  width: 70%;
+}
+
+.progress-bar4 {
+  width: 90%;
+}
+
+.progress-bar5 {
+  width: 70%;
+}
+
+
+/* .progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  text-align: center;
+  transition: inherit;
+} */
 
 .right {
   width: 40%;
   padding-bottom: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left {
@@ -76,171 +130,12 @@
 
 }
 
-.fh1,
-.fh2 {
-  /* font-size: 2.5rem; */
-  transition: all 0.4s;
-}
+
+
 
 .fh2:hover {
   color: rgb(6, 105, 138);
 }
-
-.fp1 {
-  /* font-size: 2rem; */
-  font-weight: 300;
-}
-
-@media (max-width:320px) {
-
-  .fh1,
-  .fh2 {
-    font-size: 1rem;
-  }
-
-  .fp1 {
-    font-size: 0.9rem;
-    font-weight: 400;
-  }
-
-  .right img {
-    margin-left: 10%
-  }
-
-  .air {
-    height: 80px;
-  }
-
-  @keyframes wave {
-    0% {
-      background-position-x: 0px;
-    }
-
-    100% {
-      background-position-x: 200px;
-    }
-  }
-
-  @keyframes wave2 {
-    0% {
-      background-position-x: 0px;
-    }
-
-    100% {
-      background-position-x: -200px;
-    }
-  }
-
-  .mainHome {
-    padding-bottom: 0%;
-    padding-left: 2%;
-  }
-
-  .left {
-    width: 58%;
-  }
-
-  .right {
-    width: 42%;
-  }
-
-
-  .air {
-    display: none;
-  }
-
-}
-
-@media(min-width:375px) {
-
-  .fh1,
-  .fh2 {
-    font-size: 1rem;
-  }
-
-  .right {
-    padding-bottom: 45%;
-  }
-
-  .fp1 {
-    font-size: 0.9rem;
-  }
-
-  .mainHome {
-    padding-bottom: 10%;
-  }
-
-}
-
-@media (max-width:321px) {
-
-  .fh1,
-  .fh2 {
-    font-size: 0.9rem;
-  }
-
-  .fp1 {
-    font-size: 0.9rem;
-    font-weight: 200;
-  }
-
-  .air {
-    height: 10px;
-  }
-}
-
-@media(max-width:425px) {
-  .right {
-    width: 40%;
-    padding-bottom: 35%;
-  }
-}
-
-@media (min-width:767px) {
-  .fp1 {
-    font-size: 1rem;
-  }
-
-  .right {
-    padding-bottom: 45%;
-  }
-}
-
-@media (min-width:768px) {
-  .fp1 {
-    font-size: 2rem;
-  }
-
-  .left {
-    width: 65%;
-  }
-
-  .right {
-    width: 35%;
-    padding-bottom: 45%;
-  }
-}
-
-
-.fp1 {
-  font-size: 1rem;
-}
-
-.left {
-  width: 65%;
-}
-
-.right {
-  width: 35%;
-}
-
-.right img {
-  width: 90%;
-}
-
-/* .right img {
-    width: 100%;
-  } */
 
 .air {
   height: 80px;
@@ -266,9 +161,9 @@
   }
 }
 
-.mainHome {
+/* .mainHome {
   padding-bottom: 30%;
-}
+} */
 
 .air.air4,
 .air.air3 {
@@ -346,6 +241,7 @@
   opacity: 1;
   animation-delay: 0s;
   bottom: 0;
+  margin-bottom: -5px
 }
 
 .air.air2 {
@@ -390,4 +286,101 @@
   100% {
     background-position-x: -1000px;
   }
+}
+
+
+
+/* -- new code-- */
+
+.left {
+  margin-top: 7rem;
+}
+
+.fh1,
+.fh2 {
+  font-size: 4rem;
+}
+
+.fp1 {
+  font-size: 1.2rem;
+}
+
+@media (max-width:1270px) {
+
+  .fh1,
+  .fh2 {
+    font-size: 2rem;
+  }
+
+  .fp1 {
+    font-size: 1rem;
+  }
+
+  .left {
+    margin-bottom: 7rem;
+  }
+
+}
+
+@media (max-width:476px) {
+  .left {
+    margin: 1rem;
+    margin-bottom: 10rem;
+  }
+
+  .fh1,
+  .fh2 {
+    font-size: 1.3rem;
+  }
+
+
+  .right {
+    display: none;
+  }
+}
+
+.skillmain {
+  display: flex;
+  padding: 10%;
+  width: 100%;
+  justify-content: space-around;
+  background: white;
+  color: black;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Montserrat', sans-serif;
+
+  margin: 0;
+}
+
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 30px;
+  width: 300px;
+}
+
+.progress-done {
+  background: linear-gradient(to left, #F2709C, #FF9472);
+  box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: 1s ease 0.3s;
 }
